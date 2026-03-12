@@ -193,4 +193,5 @@ if __name__ == "__main__":
     plt.savefig(figures_dir / "bitcoin_predictions_improved.png", dpi=160)
     plt.show()
 
-    print("✅ Plot saved → reports/figures/bitcoin_predictions_improved.png")
+    print("✅ Plot saved → reports/figures/bitcoin_predictions_RIDGE.png")
+
