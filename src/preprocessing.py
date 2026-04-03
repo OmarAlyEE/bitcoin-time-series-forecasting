@@ -22,7 +22,7 @@ def preprocess_data():
     # Drop first NaN caused by pct_change
     df = df.dropna()
 
-    # Normalize price (optional but useful for ML models)
+    # Normalize price 
     df['price_scaled'] = (df['price'] - df['price'].mean()) / df['price'].std()
 
     return df
