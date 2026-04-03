@@ -20,7 +20,7 @@ def evaluate_models(df, true_col="actual"):
     y_true = df[true_col].values
     results = []
 
-    # Find all prediction columns (exclude date and actual/true column)
+    # Find all prediction columns 
     pred_cols = [
         col for col in df.columns
         if col not in [true_col, "date"]
@@ -39,9 +39,7 @@ def evaluate_models(df, true_col="actual"):
 
 
 if __name__ == "__main__":
-    # ────────────────────────────────────────────────
-    #  Change this line to match your latest output file
-    # ────────────────────────────────────────────────
+
     PREDICTIONS_FILE = "../data/processed/predictions_improved.csv"
 
     try:
